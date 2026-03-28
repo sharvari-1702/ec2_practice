@@ -11,7 +11,7 @@ app.get("/:name",(req,res) => {
     const name = req.params.name;
     
     if(name === "Sharvari"){
-        res.send("Hey Baby")
+        res.send("Hey Sharvariiii")
     }
     res.send(`hey ${name}`)
 })

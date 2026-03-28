@@ -7,6 +7,15 @@ app.get("/" , (req , res) => {
     res.send("Hii , Good Afternoon")
 })
 
+app.get("/:name",(req,res) => {
+    const name = req.params.name;
+    
+    if(name === "Sharvari"){
+        res.send("Hey Baby")
+    }
+    res.send(`hey ${name}`)
+})
+
 app.listen(port,() => {
     console.log(`server is running on ${port}`);
 })
